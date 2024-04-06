@@ -1,10 +1,9 @@
-// foreach,push,pop,shift,unshift,map,filter,concat
+// foreach,push,pop,shift,unshift,map,filte,concat,reduce
 let a=[1,2,3,4,5,6];
 // Push ====>  Item ko end of array add kata hai
 a.push(7)
 a.push(8)
 a.push(9)
-[1,2,3,4,5,6,7,8]
 // ForEach ====> Visit karay ga har item ko aik baar
 a.forEach(function(i){
     console.log(i)
@@ -57,6 +56,19 @@ let h=[7,8,9,10]
 let j=[11,12,13]
 let i=h.concat(g,j)
 console.log(i)
+
+let k=["Orange","Guava","Strawberry","WaterMelon","Orange","Apple","Grapes","Pineapple","Banana","Pomigranate"]
+//        0        1         2            3           4       5        6         7         8           9
+console.log(k.slice(3,7))
+console.log(k.slice(3))
+console.log(k.slice(-3))
+
+// reduce
+const sum=k.reduce(function(acc,item){
+   return acc+ item;
+},0)
+console.log(sum)
+console.log(k.reverse())
 
 
 
